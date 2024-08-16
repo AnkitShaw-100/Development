@@ -1,0 +1,174 @@
+#heading{
+  margin-left: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+
+}
+#application {
+  /* background-color: white; */
+  padding-top: 7%;
+  border-radius: 10px;
+  display: flex;
+  justify-items: center;
+  /* width: 705px; */
+  /* height: 600px; */
+}
+#body {
+  background-color: rgb(224, 255, 129);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#form {
+  margin: auto;
+  border-radius: 10px;
+  height: fit-content;
+  background-color: rgb(233, 250, 215);
+}
+#name {
+  display: flex;
+  /* background-color: rgb(176, 242, 242); */
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+}
+
+#email {
+  display: flex;
+  /* background-color: rgb(239, 236, 164); */
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+}
+#educationtype {
+  /* background-color: rgb(204, 204, 204); */
+  margin-top: 5px;
+  width: 320px;
+  height: 31px;
+  border-radius: 6px;
+  border: 2px solid black;
+  padding-left: 14px;
+  font-size: 15px;
+}
+#address {
+  display: flex;
+  /* background-color: rgb(229, 155, 208); */
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 20px;
+  width: 680px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+}
+#city {
+  display: flex;
+  /* background-color: rgb(183, 230, 171); */
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 40px;
+  width: 660px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+}
+#footer {
+  display: flex;
+  /* background-color: rgb(230, 209, 161); */
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 40px;
+  width: 660px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  /* width: 660px; */
+}
+#date{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 27px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 5px;
+}
+#date{
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 27px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin-top: 5px;
+  padding-left: 14px;
+  font-size: 15px;
+}
+input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 25px;
+  border-radius: 7px;
+  border: 2px solid black;
+  margin-top: 5px;
+  
+}
+#button{
+  font-size :18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(8, 116, 40, 0.566);
+  color: azure;
+  border-radius: 40px;
+  height: 40px;
+  width: 100px;
+  font-weight: 600;
+}
+
+#position{
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+#textfeild1{
+  padding-left: 14px;
+  font-size: 15px;
+}
+
+#textfield2{
+  padding-left: 14px;
+  font-size: 15px;  
+}
+
+#textfeild3{
+  /* padding-top: 2px; */
+  padding-left: 14px;
+  font-size: 15px;
+}
+
+#textfeild4{
+  padding-left: 14px;
+  font-size: 15px;
+}
+
+#textfeild5{
+  padding-left: 14px;
+  font-size: 15px;
+}
+
+#textfeild6{
+  margin-top: 10px;
+  padding-left: 14px;
+  font-size: 15px;
+}

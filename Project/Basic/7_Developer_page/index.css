@@ -1,0 +1,224 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#imageContainer {
+  width: 100vw;
+  height: 100vh;
+  height: fit-content;
+  position: relative;
+  filter: blur(3px);
+  z-index: -1;
+}
+#main {
+  width: 100%;
+  height: 100%;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#text1 {
+  font-size: 100px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 1000;
+  font-style: normal;
+  color: rgb(0, 200, 255);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1.4);
+  /* animation: popIn 3s ease-in-out forwards;
+    animation-delay: 1s; */
+}
+#text2 {
+  font-size: 100px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 1800;
+  font-style: normal;
+  color: rgb(255, 217, 0);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+  /* animation: popIn 3s ease-in-out forwards;
+    animation-delay: 2s; */
+}
+/* @keyframes fadeIn {
+    to {
+        opacity: 1;  Fade in to full opacity 
+        transform: translate(-50%, -50%) scale(1); No scale change */
+#text1,
+#text2 {
+  text-shadow: 4px 4px 10px rgba(2, 2, 3, 1.4); /* Adding shadow to the text */
+  opacity: 1; /* Start with the text visible */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the animation */
+}
+#text1:hover,
+#text2:hover {
+  animation: popIn 0.5s ease-in-out; /* Apply the pop-in animation on hover */
+}
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Start scaled down */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2); /* Overshoot to make it pop */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Settle at the normal size */
+  }
+}
+
+#work {
+  /* margin: 100px;     */
+  margin-top: 0px;
+  text-align: center;
+  background-color: black;
+  height: 150px;
+  width: 100vw;
+  font-size: 50px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 1800;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8);
+}
+#work h1 {
+  margin: 0px;
+}
+#services {
+  /* margin-top: 8px;
+    background-color: rgb(0, 7, 52); 
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%); */
+  background: rgb(255, 248, 10);
+  background: radial-gradient(
+    circle,
+    rgba(255, 248, 10, 1) 0%,
+    rgba(121, 9, 9, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+#box1 {
+  transition: transform 0.1s ease;
+}
+#web_development {
+  height: 450px;
+  width: 380px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: auto;
+  text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+#web_development img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  /* Smooth transition for the hover effect */
+}
+#box1:hover {
+  transform: scale(1.1);
+}
+
+#box2 {
+  transition: transform 0.1s ease;
+}
+#app_development {
+  object-fit: contain;
+  height: 450px;
+  width: 380px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7); /* Add shadow to the container */
+}
+#app_development img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  /* Smooth transition for the hover effect */
+}
+#box2:hover {
+  transform: scale(1.1);
+}
+#box3 {
+  transition: transform 0.1s ease;
+}
+#ui_ux {
+  height: 450px;
+  width: 380px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin: auto;
+}
+#ui_ux img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  /* Smooth transition for the hover effect */
+}
+#box3:hover {
+  transform: scale(1.1);
+}
+#footer {
+  margin-top: 8px;
+  /* margin: auto; */
+  background-color: aquamarine;
+  height: 300px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+}
+#box4 {
+  background-color: rgb(112, 29, 29);
+}
+#box5 {
+  background-color: rgb(29, 121, 12);
+}
+#text3 {
+  font-size: 25px;
+  margin: 10px;
+  /* font-size: 100px; */
+  font-family: "Abril Fatface", serif;
+  font-weight: 200;
+  color: antiquewhite;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#text4 {
+  font-size: 25px;
+  margin: 10px;
+  /* font-size: 100px; */
+  font-family: "Abril Fatface", serif;
+  font-weight: 200;
+  color: antiquewhite;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#space {
+  color: antiquewhite;
+  margin-left: 10px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+}
+#last {
+  background-color: rgb(40, 10, 10);
+  height: 40px;
+}
+#text5 {
+  padding-top: 5px;
+  margin: 8px;
+  text-align: center;
+  font-size: 25px;
+  color: antiquewhite;
+}
+
+

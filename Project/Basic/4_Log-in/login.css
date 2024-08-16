@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.background{
+    background: rgb(213,213,213);
+    background: radial-gradient(circle, rgba(213,213,213,0.9556197478991597) 0%, rgba(255,255,255,1) 0%, rgba(100,191,83,1) 72%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: white;
+    height: 440px;
+    width: fit-content;
+    border: 3px solid rgb(33, 89, 3);
+    border-radius: 50px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 89, 3);
+    height: 110px;
+    width: 350px;
+    border-radius: 42px 42px 0px 0px;
+}
+.text_1{
+    font-size: 50px;
+    color: white;
+}
+.name{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.email{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;    
+}
+.password{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;        
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#textfield{
+    height: 40px;
+    width: 10px;
+    border: 1px solid rgb(33, 89, 3);
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.name_input{
+    display: flex;
+}
+.email_input{
+    display: flex;
+}
+.password_input{
+    display: flex;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 200px;
+    padding-left: 10px;
+}
+.forgot_password{
+    padding-right: 50px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.dd{
+    height: 30px;
+    width: 310px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(33, 89, 3);
+    font-size: 18px;
+    color: white;
+    font-family: Verdana;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    background-color: rgb(33, 89, 3);
+    height: 40px;
+    width: 350px;
+    border-radius: 0px 0px 42px 42px;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.text2{
+    align-items: center;
+    color: rgb(26, 208, 41);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 18px;
+}
+.text3{
+    color: rgb(13, 255, 0);
+    text-decoration: none;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap:15px; */
+}
