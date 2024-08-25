@@ -42,3 +42,45 @@ let y3 = document.querySelector("h3");
 setTimeout(() => {
     y3.innerHTML = "Hello World 3";
 }, 2000);
+
+let x4 = document.getElementById("one");
+x4.style.color = "black";
+x4.style.fontSize = "50px";
+x4.style.textAlign = "center";
+x4.style.fontFamily = "Arial";
+x4.style.backgroundColor = "lightyellow";
+x4.style.border = "3px solid black";
+
+x4.addEventListener("click", function(){
+    x4.style.color = "white";
+    x4.style.backgroundColor = "black";
+    x4.style.fontSize = "60px";
+});
+
+let x5 = document.getElementById("two");
+x5.style.color = "black";
+x5.style.fontSize = "50px";
+x5.style.textAlign = "center";
+x5.style.fontFamily = "Arial";
+x5.style.backgroundColor = "lightpink";
+x5.style.border = "3px solid black";
+
+x5.addEventListener("mouseover", function(){
+    x5.style.color = "white";
+    x5.style.backgroundColor = "black";
+    x5.style.fontSize = "60px";
+});
+
+let x6 = document.getElementById("three");
+x6.style.color = "black";
+x6.style.fontSize = "50px";
+x6.style.textAlign = "center";
+x6.style.fontFamily = "Arial";
+x6.style.backgroundColor = "lightgreen";
+x6.style.border = "3px solid black";
+
+x6.addEventListener("mouseout", function(){
+    x6.style.color = "white";
+    x6.style.backgroundColor = "black";
+    x6.style.fontSize = "60px";
+});
