@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0eafc; /* Light blue background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
+}
+
+.form {
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    width: 400px;
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Slightly more rounded corners */
+    padding: 25px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 8px; /* Less rounded corners for input */
+    border: 1px solid #b0bec5; /* Light grey border */
+    font-size: 16px;
+    transition: border-color 0.3s;
+    margin-bottom: 20px; /* Spacing below input */
+}
+
+.input:focus {
+    border-color: #007bff; /* Light blue border on focus */
+    outline: none;
+}
+
+.input::placeholder {
+    color: #90a4ae; /* Grey placeholder */
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 15px;
+    font-size: 16px;
+    border-top: 1px solid #eceff1; /* Softer border between items */
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer; /* Hand cursor for list items */
+}
+
+.list li:hover {
+    background-color: #f7f9fc; /* Very light blue on hover */
+}
+
+.list li .fa-trash,
+.list li .fa-check-square {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list li .fa-trash {
+    color: #f44336; /* Red color for delete icon */
+    right: 20px;
+}
+
+.list li .fa-trash:hover {
+    color: #d32f2f; /* Darker red on hover */
+}
+
+.list li .fa-check-square {
+    color: #388e3c; /* Green color for check icon */
+    right: 60px;
+}
+
+.list li .fa-check-square:hover {
+    color: #2e7d32; /* Darker green on hover */
+}
+
+.list li.checked {
+    color: #b0bec5; /* Grey color for checked items */
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square {
+    color: #b0bec5; /* Grey color for checked items */
+}
