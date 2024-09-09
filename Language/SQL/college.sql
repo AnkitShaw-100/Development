@@ -1,5 +1,6 @@
 create database college;
-use college;
+create database IF NOT EXISTS college;
+USE college;
 create table student(
 	rollno int primary key,
 	name varchar(50),
@@ -17,4 +18,6 @@ values
 (105, "farah", 90, "A", "Goa"),
 (106, "shushant", 48, "C", "Delhi");
 
-select * from college;
+select * from student;
+
+show databases
