@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Weather Dashboard</h1>
-    <input type="text" id="city" placeholder="Enter city name:">
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weather"></div>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <form id="form">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by location"
+                autocomplete="off"
+            />
+            <button type="submit" id="search-button">Search</button>
+        </form>
+        <div id="loading" class="loading">Loading...</div>
+        <main id="main"></main>
+    </body>
 </html>

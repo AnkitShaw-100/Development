@@ -1,24 +1,73 @@
-async function getWeather() {
-    const city = document.getElementById('city').value; // Get the city name from the input
-    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+const apikey = "3265874a2c77ae4a04bb96236a642d2f";
 
+const main = document.getElementById("main");
+const form = document.getElementById("form");
+const search = document.getElementById("search");
+const loadingEl = document.getElementById("loading");
+
+const url = (city) =>
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+
+async function getWeatherByLocation(city) {
+    showLoading(true); // Show loading animation
     try {
-        // Fetch weather data for the specified city and country (India - IN)
-        const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}`);
-        const data = await response.json();
+        const resp = await fetch(url(city));
+        const respData = await resp.json();
 
-        if (response.ok) {
-            const tempCelsius = (data.main.temp - 273.15).toFixed(2); // Convert Kelvin to Celsius
-            document.getElementById('weather').innerHTML = `
-                <h2>${data.name}, ${data.sys.country}</h2>
-                <p>Temperature: ${tempCelsius}°C</p>
-                <p>Weather: ${data.weather[0].description}</p>
-                <p>Humidity: ${data.main.humidity}%</p>
-            `;
+        if (respData.cod === 200) {
+            addWeatherToPage(respData);
         } else {
-            document.getElementById('weather').innerHTML = `<p>${data.message}</p>`; // Display error message from API
+            showError(`City not found. Please try again.`);
         }
     } catch (error) {
-        document.getElementById('weather').innerHTML = `<p>Failed to fetch weather data. Please try again later.</p>`;
+        showError("Error fetching data. Please check your connection.");
+    } finally {
+        showLoading(false); // Hide loading animation
     }
 }
+
+function addWeatherToPage(data) {
+    const temp = KtoC(data.main.temp);
+
+    const weather = document.createElement("div");
+    weather.classList.add("weather");
+
+    weather.innerHTML = `
+        <h2>
+            <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather Icon" />
+            ${temp}°C 
+            <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather Icon" />
+        </h2>
+        <small>${data.weather[0].main}</small>
+    `;
+
+    // Cleanup
+    main.innerHTML = "";
+    main.appendChild(weather);
+}
+
+function KtoC(K) {
+    return Math.floor(K - 273.15);
+}
+
+function showError(message) {
+    const weather = document.createElement("div");
+    weather.classList.add("weather");
+    weather.innerHTML = `<p>${message}</p>`;
+    main.innerHTML = "";
+    main.appendChild(weather);
+}
+
+function showLoading(show) {
+    loadingEl.style.display = show ? "block" : "none";
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const city = search.value.trim();
+
+    if (city) {
+        getWeatherByLocation(city);
+    }
+});
