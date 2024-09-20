@@ -6,9 +6,10 @@ const search = document.getElementById("search");
 const loadingEl = document.getElementById("loading");
 
 const url = (city) =>
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+    `https://www.metaweather.com/api/location/search/?query=${city}`;
 
 async function getWeatherByLocation(city) {
+    console.log((city));
     showLoading(true); // Show loading animation
     try {
         const resp = await fetch(url(city));
@@ -66,6 +67,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const city = search.value.trim();
+    console.log(city);
 
     if (city) {
         getWeatherByLocation(city);
