@@ -1,0 +1,87 @@
+body {
+  background-color: #e0f7fa; /* Light cyan for a fresh look */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00695c; /* Dark teal for contrast */
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  width: max-content;
+  border: 2px solid #004d40; /* Darker teal */
+  border-radius: 15px;
+  padding: 40px;
+  background-color: #ffffff; /* White background for the container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.firstrow,
+.secondrow {
+  margin-bottom: 20px;
+}
+
+#button {
+  padding: 12px 24px;
+  background-color: #4caf50; /* Green */
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* More rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slightly grow on hover */
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 12px 15px;
+  border: 2px solid #004d40; /* Dark teal border */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Full width for better usability */
+  max-width: 300px; /* Set a max width */
+  font-size: 1rem;
+  color: #333; /* Dark gray text color */
+  background-color: #f1f8e9; /* Light green background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #4caf50; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add a glow effect */
+  outline: none; /* Remove default outline */
+}
+
+input[type="password"] {
+  padding: 12px 15px;
+  border: 2px solid #004d40; /* Dark teal border */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Full width for better usability */
+  max-width: 300px; /* Set a max width */
+  font-size: 1rem;
+  color: #333; /* Dark gray text color */
+  background-color: #f1f8e9; /* Light green background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="password"]:focus {
+  border-color: #4caf50; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add a glow effect */
+  outline: none; /* Remove default outline */
+}
