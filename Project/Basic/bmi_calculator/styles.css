@@ -5,12 +5,12 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 #main {
   display: grid;
   place-items: center;
-  height: 100vh;
   border: 4px solid black;
   height: 30em;
   width: 28em;
@@ -32,13 +32,11 @@ body {
   display: flex;
 }
 
-#input_weight , #input_height{
-    border-radius: 10px;
-    height: 40px;
-    width: 180px;
+#input_weight, #input_height {
+  border-radius: 10px;
+  height: 40px;
+  width: 180px;
 }
-
-
 
 button {
   font-size: 2rem;
@@ -48,7 +46,7 @@ button {
   padding: 10px 20px;
   border-radius: 100px;
   cursor: pointer;
-  width: 45vw;
+  width: calc(100% - 40px); /* Adjusted width to fit within the container */
   transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -59,6 +57,7 @@ button {
   gap: 80px;
   margin-top: 20px;
 }
+
 button:hover {
   background-color: #5f5200;
   transform: scale(1.03);
