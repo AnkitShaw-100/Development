@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#coupon, #luck {
+  background-color: rgba(242, 199, 142, 0.871);
+  padding: 10px;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 15px;
+  border: 3px dashed rgb(0, 0, 0);
+  color: rgb(78, 56, 28);
+  height: 60px;
+  width: 230px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#coupon:hover, #luck:hover {
+  background-color: rgba(255, 150, 0, 0.8);
+  transform: scale(1.05);
+}
+
+#gif {
+  height: 400px;
+  width: 500px;
+  border-radius: 50px;
+  margin-bottom: 10px; 
+}
+
+#luck {
+  background-color: rgba(142, 194, 242, 0.871);
+  color: rgb(11, 21, 78);
+}
+
+#buttons{
+  display: flex;
+  gap: 30px;
+}

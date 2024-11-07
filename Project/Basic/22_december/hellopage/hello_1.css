@@ -27,7 +27,8 @@ body {
   gap: 50px;
 }
 
-#button {
+#button-ankit,
+#button-babu {
   color: rgb(243, 62, 62);
   font-size: 30px;
   font-family: cursive;
