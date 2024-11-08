@@ -6,5 +6,5 @@ button_ankit.addEventListener("click", function () {
 });
 
 button_babu.addEventListener("click", function () {
-  window.location.href = "hello_2.html"; // Navigate to hello_2.html inside the 'propose' folder
+  window.location.href = "serious_1.html"; // Navigate to hello_2.html inside the 'propose' folder
 });
