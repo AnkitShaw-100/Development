@@ -8,10 +8,10 @@ body {
   margin: 0;
 }
 
-#container {
-  display: grid;
-  place-items: center;
-  text-align: center;
+#container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #text {
@@ -19,16 +19,18 @@ body {
   font-size: 48px;
   font-family: cursive;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 #buttons {
   display: flex;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
-#button-ankit,
-#button-babu {
+#boyfriend,
+#husband {
   color: rgb(243, 62, 62);
   font-size: 30px;
   font-family: cursive;
@@ -43,21 +45,14 @@ body {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-#button:hover {
+#boyfriend:hover,
+#husband:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-#button:active {
+#boyfriend:active,
+#husband:active {
   transform: translateY(1px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#gif img {
-  margin-bottom: 20px;
-  width: 330px;
-  height: 400px;
-  border: 4px dashed white;
-  border-radius: 50px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
