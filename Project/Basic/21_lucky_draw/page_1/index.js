@@ -6,7 +6,7 @@ coupon.addEventListener("click", () => {
 
 function generateCoupon() {
   const random = "0123456789";
-  const length = 12;
+  const length = 4;
   let couponCode = "";
 
   for (let i = 0; i < length; i++) {
